@@ -32,7 +32,7 @@ def cnn7(pretrained=False, **kwargs):
 
 
 def wide_resnet_8(pretrained=False, **kwargs):
-    model = WRN_Xu(BasicBlock_xu, [1,1,1], widen_factor=8, dense=True, pool=False)
+    model = WRN_Xu(BasicBlock_Xu, [1,1,1], widen_factor=8, dense=True, pool=False)
     if pretrained:
         checkpoint = f'https://github.com/cestwc/models/raw/pretrained/{pretrained}.pt'
         model.load_state_dict(torch.hub.load_state_dict_from_url(checkpoint, progress=True))
