@@ -2,7 +2,7 @@
 dependencies = ["torch"]
 
 import torch
-from vision.nets import ConvNet, CNN7, ResNet18, ResNet50
+from vision.nets import MNISTCNN, CNN7, ResNet18, ResNet50
 from vision.convmed import ConvMed, ConvMedBig
 from vision.wide_resnet_bn import wide_resnet_8 as _wide_resnet_8
 
