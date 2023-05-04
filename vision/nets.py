@@ -6,9 +6,9 @@ import torch.nn.functional as F
 https://github.com/pytorch/examples/blob/main/mnist/main.py
 """
 
-class ConvNet(nn.Module):
+class MNISTCNN(nn.Module):
 	def __init__(self):
-		super(ConvNet, self).__init__()
+		super(MNISTCNN, self).__init__()
 		self.conv1 = nn.Conv2d(1, 32, 3, 1)
 		self.conv2 = nn.Conv2d(32, 64, 3, 1)
 		self.dropout1 = nn.Dropout(0.25)
@@ -31,6 +31,8 @@ class ConvNet(nn.Module):
 		return x
 	
 """CNN (7 layers) with batch normalisation in:
+https://github.com/Verified-Intelligence/auto_LiRPA/blob/master/examples/vision/models/feedforward.py
+and
 https://github.com/shizhouxing/Fast-Certified-Robust-Training/blob/main/models/feedforward.py
 """
 
@@ -64,6 +66,8 @@ def CNN7(in_ch=3, in_dim=32, width=64, linear_size=512, num_class=10):
 
 """Resnet implementation is based on the implementation found in:
 https://github.com/YisenWang/MART/blob/master/resnet.py
+and
+https://github.com/yaodongyu/TRADES/blob/master/models/wideresnet_update.py
 """
 
 class BasicBlock(nn.Module):
