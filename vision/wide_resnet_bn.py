@@ -1,5 +1,7 @@
 """Resnet implementation is based on the implementation found in:
 https://github.com/shizhouxing/Fast-Certified-Robust-Training/blob/main/models/wide_resnet_bn.py
+and
+https://github.com/Verified-Intelligence/auto_LiRPA/blob/master/examples/vision/models/wide_resnet_cifar.py
 """
 
 import torch
