@@ -67,7 +67,7 @@ def CNN7(in_ch=3, in_dim=32, width=64, linear_size=512, num_class=10):
 """Resnet implementation is based on the implementation found in:
 https://github.com/YisenWang/MART/blob/master/resnet.py
 and
-https://github.com/yaodongyu/TRADES/blob/master/models/wideresnet_update.py
+https://github.com/yaodongyu/TRADES/blob/master/models/resnet.py
 """
 
 class BasicBlock(nn.Module):
