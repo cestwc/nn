@@ -1,6 +1,7 @@
 # Optional list of dependencies required by the package
 dependencies = ["torch"]
 
+import torch
 from vision.nets import ConvNet, CNN7, ResNet18, ResNet50
 from vision.convmed import ConvMed, ConvMedBig
 from vision.wide_resnet_bn import wide_resnet_8
